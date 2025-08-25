@@ -1,0 +1,28 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom keyframe animations for a smoother user experience. */
+@keyframes fade-in-down {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-down {
+    animation: fade-in-down 0.5s ease-out;
+}
+
+/* Hide scrollbar for a cleaner look */
+.scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
